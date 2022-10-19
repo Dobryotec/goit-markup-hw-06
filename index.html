@@ -495,6 +495,17 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <b class="footer-form-title">subscribe to the newsletter</b>
+          <div>
+          <input type="email" name="mail" class="footer-form-input" placeholder="E-mail">
+          <button type="submit" class="footer-form-button">Subscribe
+            <svg class="icon-send" width="24" height="24">
+              <use href="./images/sprite-svg.svg#icon-send"></use>
+            </svg>
+          </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop" data-modal>
@@ -508,7 +519,7 @@
         <form class="modal-form">
          
           <div class="form-element">
-          <label for="name">Name</label>
+          <label for="name" class="form-label">Name</label>
           
           <div class="input-wrapper">
           <input type="text" name="name" id="name">
@@ -519,7 +530,7 @@
           </div>
           
           <div class="form-element">
-          <label for="tel">Telephone</label>
+          <label for="tel" class="form-label">Telephone</label>
           
           <div class="input-wrapper">
           <input type="tel" name="telephone" id="tel">
@@ -530,7 +541,7 @@
           </div>
           
           <div class="form-element">
-          <label for="email">E-mail</label>
+          <label for="email" class="form-label">E-mail</label>
           
           <div class="input-wrapper">
           <input type="email" name="email" id="email">
@@ -541,8 +552,8 @@
           </div>
           
           <div class="form-element">
-          <label for="comments">Comments</label>
-          <textarea name="comments" id="comments" placeholder="Enter the text"></textarea>
+          <label for="comments" class="form-label">Comments</label>
+          <textarea name="comments" id="comments" class="form-comments" placeholder="Enter the text"></textarea>
           </div>
 
           <div class="accept">  
@@ -550,7 +561,7 @@
           <label for="accept">I agree with the newsletter and accept the Terms and Conditions</label>
           </div>
 
-         <div class="btn-wrapper"><button type="submit" class="button-submit">Send</button> </div>
+         <button type="submit" class="button-submit">Send</button>
         </form>
       </div>
     </div>
