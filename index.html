@@ -459,7 +459,7 @@
           </address>
         </div>
         <div class="footer-wrap">
-          <p class="subtitle-text">find us on</p>
+          <b class="subtitle-text">find us on</b>
           <ul class="social-list-footer">
             <li class="social-item-footer">
               <a class="social-link-footer" href=""
@@ -508,7 +508,7 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Leave your information and we'll call you back</p>
         <button type="button" class="close-button" data-modal-close>
@@ -556,10 +556,17 @@
           <textarea name="comments" id="comments" class="form-comments" placeholder="Enter the text"></textarea>
           </div>
 
-          <div class="accept">  
-          <input type="checkbox" name="accept" id="accept">
-          <label for="accept">I agree with the newsletter and accept the Terms and Conditions</label>
-          </div>
+          
+          <div class="accept">
+          <label for="accept" class="check-text">
+          <input class="input-check  visually-hidden " type="checkbox" name="accept" id="accept" value="true">
+          <span class="input-check-wrap">
+          <svg class="icon-check" width="16" height="15">
+            <use href="./images/sprite-svg.svg#icon-check"></use>
+          </svg>
+          </span>
+          I agree with the newsletter and accept the Terms and Conditions</label>
+         </div>
 
          <button type="submit" class="button-submit">Send</button>
         </form>
